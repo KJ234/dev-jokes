@@ -1,0 +1,89 @@
+
+
+
+body {
+    /* background-color: rgba(160, 196, 221, 0.383); */
+    background-image: url(./brick.jpg);
+   
+  font-family: 'Noto Sans Khmer', sans-serif;
+
+ 
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#joke {
+    padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  border: 10px dashed rgb(65, 17, 65);
+  border-radius: 20px;
+  box-shadow: 35px 35px 35px black;
+  height: 35vh;
+  width: 80vh;
+  margin-bottom: 40px;
+  color: white;
+  font-size: xxx-large;
+  font-weight: 600;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(226,211,211,0.10968137254901966) 100%);
+}
+
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #b897d9;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .container, #joke {   
+    flex-direction: column;
+  }
+}
